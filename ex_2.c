@@ -1,34 +1,36 @@
+
 #include <stdio.h>
+#include <stdlib.h>
 
 int main()
 {
-  int num, primeiro = 0, segundo = 1, proximo = 0, x = 0;
+  int num, n1 = 0, n2 = 1, n3, pertence = 0;
 
-  printf("Digite um número inteiro positivo: ");
+  printf("Informe um número: ");
   scanf("%d", &num);
 
-  if (num == 0 || num == 1)
+  printf("Sequência de Fibonacci: ");
+
+  while (n1 <= num)
   {
-    printf("O número %d pertence à sequência de Fibonacci.", num);
+    printf("%d ", n1);
+    if (n1 == num)
+    {
+      pertence = 1;
+    }
+    n3 = n1 + n2;
+    n1 = n2;
+    n2 = n3;
+  }
+
+  if (pertence)
+  {
+    printf("\n%d pertence à sequência de Fibonacci.\n", num);
   }
   else
   {
-    while (proximo <= num)
-    {
-      if (num == proximo)
-      {
-        printf("O número %d pertence à sequência de Fibonacci.", num);
-        x = 1;
-        break;
-      }
-      proximo = primeiro + segundo;
-      primeiro = segundo;
-      segundo = proximo;
-    }
-    if (!x)
-    {
-      printf("O número %d não pertence à sequência de Fibonacci.", num);
-    }
+    printf("\n%d não pertence à sequência de Fibonacci.\n", num);
   }
+
   return 0;
 }

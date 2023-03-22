@@ -14,6 +14,7 @@ int main()
   return 0;
 }
 // No caso de criamos a sequencia a partir de uma entrada do usuário teríamos:
+/*
 int main()
 {
   int n1, n2, n3, i, count;
@@ -37,20 +38,4 @@ int main()
   }
   return 0;
 }
-
-int main()
-{
-  int n1 = 1, n2 = 1, n3, i, count;
-  printf("Digite o tamanho da sequência: ");
-  scanf("%d", &count);
-  printf("Sequência: %d, %d, ", n1, n2);
-
-  for (i = 2; i < count; i++)
-  {
-    n3 = n1 + n2;
-    printf("%d, ", n3);
-    n1 = n2;
-    n2 = n3;
-  }
-  return 0;
-}
+*/

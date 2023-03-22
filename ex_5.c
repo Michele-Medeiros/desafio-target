@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+
 #define MAX_SIZE 100
 
 int main()
@@ -20,8 +22,6 @@ int main()
     str[i] = str[j];
     str[j] = temp;
   }
-
   printf("String invertida: %s", str);
-
   return 0;
 }

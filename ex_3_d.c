@@ -51,7 +51,7 @@ int main()
   }
   else
   {
-    printf('erro')
+    printf("erro");
   }
   printf("%d\n", n);
   return 0;
